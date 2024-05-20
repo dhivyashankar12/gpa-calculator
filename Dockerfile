@@ -13,5 +13,6 @@ COPY . .
 # Run pip to install the dependencies of the Flask app
 RUN pip install -r requirements.txt
 
+EXPOSE 5000
 # Define the command to start the container
 CMD ["python", "app.py"]
